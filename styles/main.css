@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/*section utilisateurs*/
+
+#utilisateurs h2 {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 20vh;
+}
+
+#utilisateurs {
+    background-color: #ebf6ff;
+    /* background-color: #031636; */
+    width: 30%;
+}
+
+
+
+#utilisateurs > h2 {
+    color: black;
+    text-align: left;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 0;
+    height: 27.5px;
+    color: black;
+    background: #ffe812
+    
+}
+
+#users { 
+    
+    /* background: rgba(255, 255, 255, 0.082); */
+    border-radius: 10px;
+    
+    padding: 20px;
+    margin: 20px;    
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+#users > li{
+    cursor: pointer;
+    color: black;
+}
+
+
+
+#users > .user {
+    padding: 5px 30px;
+}
+#users > .user:hover {
+    cursor: pointer;
+    
+    
+    border-radius: 10px;
+}
+
+/*section messages*/
+
+#conversation-courante {
+    background-image: url(https://image.freepik.com/vecteurs-libre/fond-bleu-degrade-effet-tache-brillant-du-coin_107708-47.jpg);
+    background-size: cover;
+    /* width: calc(100vw - 300px); */
+    width: 70%;
+    position: relative;
+    
+}
+
+#conversation-courante .titre {
+    background: #ffe812;
+    text-align: left;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 27.5px;
+    color: black;
+
+}
+
+#conversation-courante .messages {
+    height: calc(100vh - 167.5px);
+    overflow-y: scroll;
+    background-image: url(https://pm1.narvii.com/5758/7fe22b3fbda347bc7067b68ad86505c5fb528ded_hq.jpg);
+    
+}
+
+#conversation-courante .messages :last-child {
+    margin-bottom: 40px;
+}
+#conversation-courante .astuce {
+    color: black;
+    background-color: #ebf6ff;
+    width: auto;
+    padding: 10px;
+    
+    border-radius: 30px;
+    position: absolute;
+    top: calc(50% - 20px);
+    opacity: 0.8;
+    text-align: center;
+    font-weight: normal;
+}
+
+#conversation-courante .message {
+    background: #555;
+    margin: 20px 20px 0 20px; 
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+#conversation-courante .mon.message {
+    background: rgba(255, 255, 255, 0.534);
+    position: relative;
+    left: calc(100% - 580px);
+    /* TODO: adapter le `left` lorsque le message fait moins de 500px */
+}
+#conversation-courante #saisie-message {
+    background-color: #ebf6ff;
+    
+    color: black;
+    font-size: large;
+}
+
+#conversation-courante #saisie-message .champ-message {
+    background: rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.25rem;
+    border: 0;
+    display: inline-block;
+    width: calc(100% - 140px);
+}
+#conversation-courante #saisie-message .bouton {
+    max-width: 80px;
+    padding: 10px 20px;
+}
+
+.bouton {
+    color: black;
+    font-weight: bold;
+    background: #ffe812;
+    border: 0;
+    margin: 6px;
+    padding: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: bold;
+    text-transform: uppercase;
+    
+}
+.bouton:hover {
+    background: yellowgreen;
+}
+
+@media only screen and (max-width: 650px){
+    #utilisateurs{
+        
+        display: none;
+    }
+    #conversation-courante{
+        width: 100%;
+    }
+}
+
